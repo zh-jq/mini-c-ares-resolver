@@ -25,12 +25,10 @@
 //! # Example
 //!
 //! ```rust
-//! extern crate c_ares_resolver;
-//! extern crate futures_executor;
 //! use futures_executor::block_on;
 //!
 //! fn main() {
-//!     let resolver = c_ares_resolver::FutureResolver::new().unwrap();
+//!     let resolver = mini_c_ares_resolver::FutureResolver::new().unwrap();
 //!     let query = resolver.query_a("google.com");
 //!     let response = block_on(query);
 //!     match response {
