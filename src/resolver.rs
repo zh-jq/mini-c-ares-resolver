@@ -74,20 +74,6 @@ impl Options {
         self
     }
 
-    /// The path to use for reading the resolv.conf file.  The `resolvconf_path` should be set to a
-    /// path string, and will be honoured on *nix like systems.  The default is /etc/resolv.conf.
-    pub fn set_resolvconf_path(&mut self, resolvconf_path: &str) -> &mut Self {
-        self.inner.set_resolvconf_path(resolvconf_path);
-        self
-    }
-
-    /// The path to use for reading the hosts file.  The `hosts_path` should be set to a
-    /// path string, and will be honoured on *nix like systems.  The default is /etc/hosts.
-    pub fn set_hosts_path(&mut self, hosts_path: &str) -> &mut Self {
-        self.inner.set_hosts_path(hosts_path);
-        self
-    }
-
     /// Set the socket send buffer size.
     pub fn set_sock_send_buffer_size(&mut self, size: u32) -> &mut Self {
         self.inner.set_sock_send_buffer_size(size);
