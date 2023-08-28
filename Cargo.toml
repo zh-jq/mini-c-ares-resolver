@@ -1,7 +1,7 @@
 [package]
 name = "mini-c-ares-resolver"
 license = "MIT"
-version = "0.1.0"
+version = "0.2.0"
 description = """
 An asynchronous DNS resolver, backed by mini-c-ares.
 """
@@ -23,3 +23,4 @@ futures-executor = "0.3.9"
 
 [features]
 default = []
+vendored = ["c-ares/vendored"]
