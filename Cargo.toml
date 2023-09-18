@@ -16,7 +16,7 @@ include = ["src/**/*", "LICENSE.txt", "README.md", "CHANGELOG.md"]
 [dependencies]
 c-ares = { package = "mini-c-ares", version = "0.2.0" }
 futures-channel = "0.3.9"
-polling = "2.0.1"
+polling = "3.0.0"
 
 [dev-dependencies]
 futures-executor = "0.3.9"
